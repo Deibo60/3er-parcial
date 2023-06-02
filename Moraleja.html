@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Botones Redireccionados</title>
+        <style>
+            body {
+                background-color: black; /* Cambia el color de fondo a negro */
+                font-family: Arial, sans-serif;
+            }
+
+            .container {
+                display: flex;
+                flex-direction: column; /* Cambia la dirección del contenedor a columna */
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+            }
+
+            .box {
+                background-color: #041102;
+                border-radius: 8px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+                padding: 20px;
+                width: 400px;
+                text-align: center;
+                transition: transform 0.3s;
+                margin: 10px; /* Agrega un margen entre los cuadros */
+                background-color: #083f33; /* Cambia el color de fondo a verde oscuro */
+            }
+
+            .box:hover {
+                transform: translateY(-5px);
+            }
+
+            .box:nth-child(1) {
+                background-color: #083f0f; /* Cambia el color de fondo a verde oscuro */
+            }
+
+            .box:nth-child(2) {
+                background-color: #083f0f; /* Cambia el color de fondo a verde oscuro */
+            }
+
+            .box h2 {
+                margin-top: 0;
+                color: #ebe5e5;
+            }
+
+            .box p {
+                margin-bottom: 0;
+                color: #f5eeee;
+            }
+
+            .button-container {
+                display: flex;
+                justify-content: center;
+                margin-top: 20px;
+                text-align: center;
+            }
+
+            .button {
+                display: inline-block;
+                padding: 10px 20px;
+                border-radius: 10px;
+                background-color: #912011;
+                color: #fff;
+                font-size: 18px;
+                text-decoration: none;
+                transition: background-color 0.3s ease;
+                animation: pulse 2s infinite;
+                text-align: center;
+            }
+
+            .button:hover {
+                background-color: #ca3e1b;
+            }
+
+            @keyframes pulse {
+                0% {
+                    transform: scale(1);
+                }
+                50% {
+                    transform: scale(1.1);
+                }
+                100% {
+                    transform: scale(1);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="box">
+                <h2>Moraleja</h2>
+                <p>La moraleja del libro "El Quinto Acuerdo" es que es
+                    importante cuestionar nuestras creencias, escuchar a los
+                    demás, liberarnos de nuestras limitaciones y vivir en el
+                    presente. Al cuestionar nuestras creencias, abrimos nuestra
+                    mente a nuevas perspectivas. Escuchar a los demás de manera
+                    empática nos ayuda a tener mejores relaciones y
+                    comunicación. Al liberarnos de nuestras limitaciones
+                    autoimpuestas, como los miedos y creencias limitantes,
+                    podemos tener más libertad y autenticidad en nuestras vidas.
+                    Y al vivir en el presente, podemos disfrutar y conectar más
+                    con cada momento. En resumen, la moraleja del libro nos
+                    enseña a cuestionar, escuchar, liberarnos y vivir plenamente
+                    en el presente para encontrar la felicidad y realización
+                    personal.
+                </p>
+            </div>
+            <div class="button-container">
+                <a class="button" href="index.html">Regresar</a>
+            </div>
+        </div>
+    </body>
+</html>
